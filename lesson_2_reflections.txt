@@ -31,4 +31,18 @@ It helps you to understand where the branches diverged
 
 What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
+Merging combines the changes made in both branches into a single branch.
+Sometimes git is unable to resolve which changes need to be and
+the committer needs to modify the confusing code.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Automatic merging may cause code to be modified with uncontrolled
+consequences, but Git seems to be somewhat careful in making some changes and
+forces the user to make those changes, and is helpful in highlighting the
+differences between the merging code.  On the pro side, git makes it easier to
+highlight the differences in the merged code and therefore helps to decide how
+the changed code should be implemented.
+
+Merging code manually can be very time consuming. You would need to multiple
+diffs between the merging branches at each specific time stamped commit.
